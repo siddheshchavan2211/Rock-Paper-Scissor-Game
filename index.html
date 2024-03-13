@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="diva">
+      <h4>Rock,Paper,Scissor Game</h4>
+      <button
+        id="text1"
+        onClick="
+      
+        let compchoice =random();
+        let resultmsg=  random2('Rock', compchoice);
+        showresult('Rock', compchoice, resultmsg)
+      "
+      >
+        Rock
+      </button>
+      <button
+        id="text1"
+        onClick="
+      
+       compchoice =random();
+      
+       resultmsg=  random2('Paper', compchoice);
+       showresult('Paper', compchoice, resultmsg)
+     "
+      >
+        Papper
+      </button>
+      <button
+        id="text1"
+        onClick="
+         compchoice =random();
+         resultmsg=  random2('Scissor', compchoice);
+         showresult('Scissor', compchoice, resultmsg)
+      
+     
+     "
+      >
+        Scissor
+      </button>
+      <button
+        id="text1"
+        onClick="localStorage.clear()
+        resetscore();"
+      >
+        Reset
+      </button>
+      <h2 id="scoreuser"></h2>
+      <h2 id="scorecomp"></h2>
+      <h2 id="scoreresult"></h2>
+      <h2 id="scorenn"></h2>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
